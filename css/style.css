@@ -2099,27 +2099,33 @@ a {
 }
 
 .imageblock__text {
+  max-width: 813px;
+  background: #0d2936;
   position: absolute;
   top: 100px;
   right: 135px;
   z-index: 5;
-  max-width: 739px;
+  padding: 32px 0px 59px 43px;
   text-align: right;
 }
 
 .imageblock__text h1 {
+  margin: 0px 0px 34px 0px;
+  text-align: left;
   font-style: normal;
   font-weight: normal;
   font-size: 60px;
   line-height: 72px;
-  color: #000000;
+  color: #fff;
 }
 
 .imageblock__text P {
+  text-align: left;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   line-height: 35px;
+  color: #fff;
 }
 
 .imageblock__bg {
