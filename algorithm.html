@@ -27,7 +27,8 @@
             <div class="container">
                 <nav class="header__menu">
 
-                    <ul class="header__menu-list">
+                    <ul class="header__menu-list" id="msgText">
+                        <li><a href="index.html">Главная</a></li>
                         <li><a href="about.html">О компании</a></li>
                         <li><a href="method.html">Методика</a></li>
                         <li><a href="algorithm.html">Алгоритм исследования</a></li>
@@ -194,6 +195,15 @@
 
         request.send(body);
     }
+    try {
+        var el = document.getElementById('msgText').getElementsByTagName('a');
+        var url = document.location.href;
+        for (var i = 0; i < el.length; i++) {
+            if (url == el[i].href) {
+                el[i].className += ' act';
+            };
+        };
+    } catch (e) { }
 </script>
 
 </html>

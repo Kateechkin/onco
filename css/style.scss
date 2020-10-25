@@ -45,7 +45,9 @@ li {
 a {
     text-decoration: none;
 }
-
+.act {
+    color: #90c04b !important;
+}
 header {
 }
 
@@ -118,7 +120,7 @@ header {
         font-weight: normal;
         font-size: 20px;
         line-height: 14px;
-        color: black;
+
         a {
             color: black;
         }
@@ -131,6 +133,12 @@ header {
                 // transition: width 0.5s ease-in-out;
                 a {
                     color: #90c04b;
+                }
+            }
+            &:active {
+                a {
+                    color: #90c04b;
+                    transition: color 0s;
                 }
             }
         }
